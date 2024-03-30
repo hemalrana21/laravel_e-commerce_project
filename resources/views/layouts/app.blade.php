@@ -33,7 +33,7 @@
         <div class="site-info">
             <a class="logo-link d-b" href="#"><img class="d-b" src="{{ asset('img/logo.jpg') }}"
                     alt="logo"></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Kunal Saini !</p>
+            <p>All Rights Reserved.Privacy Policy. Hemal Rana</p>
         </div>
     </footer>
 </body>

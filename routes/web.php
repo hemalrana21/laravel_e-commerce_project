@@ -68,7 +68,7 @@ Route::middleware('auth')->group(function(){
     // Admin routes
     Route::middleware('admin')->name('admin.')->prefix('admin')->group(function(){
 
-        Route::get('/dashboard', DashboardController::class)->name('dashboard');    
+        Route::get('/dashboard', DashboardController::class)->name('dashboard');
         Route::resource('transactions', TransactionController::class)->only(['index', 'update']);
         // account
         Route::get('/account', [AdminAccountController::class, 'general'])->name('account');
@@ -94,7 +94,7 @@ Route::middleware('auth')->group(function(){
         Route::view('/setting', 'user.setting')->name('setting');
 
     });
-    
+
     Route::middleware('verified')->group(function(){
 
         Route::get('/checkout', [CheckoutController::class, 'showForm'])->name('checkout');
@@ -102,7 +102,7 @@ Route::middleware('auth')->group(function(){
 
     });
 
-    //GET USER ADDRESS 
+    //GET USER ADDRESS
     Route::get('/address', function(){
 
         /** @var App\Models\User $user **/
